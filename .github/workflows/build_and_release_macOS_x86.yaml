@@ -49,7 +49,7 @@ jobs:
     needs: create-release
     permissions:
       contents: write
-    runs-on: macos-13
+    runs-on: macos-latest
     steps:
       - name: Install Dependencies
         if: runner.os == 'Linux'
