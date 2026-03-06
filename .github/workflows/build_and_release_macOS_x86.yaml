@@ -82,7 +82,7 @@ jobs:
           export skia_arch=x64
 
           cmake -S . -B build -G Ninja \
-            -DCMAKE_BUILD_TYPE=${{ env.build_type }} \
+            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} \
             -DCMAKE_OSX_DEPLOYMENT_TARGET=10.9 \
             -DENABLE_TESTS=OFF \
             -DENABLE_SCRIPTING=$enable_scripting \
