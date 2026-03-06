@@ -80,6 +80,8 @@ jobs:
           export enable_scripting=on
 
           export skia_arch=x64
+          export CFLAGS="-arch x86_64"
+          export CXXFLAGS="-arch x86_64"
 
           cmake -S . -B build -G Ninja \
             -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} \
